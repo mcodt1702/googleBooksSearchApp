@@ -8,7 +8,14 @@ export default function ResultsList(props) {
           <h2>Results for {props.query}</h2>
           <ul>
             {props.results.map((result) => (
-              <li>{result.volumeInfo.title}</li>
+              <>
+                <li>
+                  <h2>Title: {result.volumeInfo.title}</h2>
+                </li>
+                <li>Author: {result.volumeInfo.authors}</li>
+                <li>Price: ${result.saleInfo.listPrice.amount}</li>
+                <li>Description: {result.volumeInfo.description}</li>
+              </>
             ))}
           </ul>
         </>
