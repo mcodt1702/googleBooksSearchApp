@@ -12,7 +12,6 @@ export default function FreebookFilter(props) {
         >
           <option value="">Select...</option>
           <option value="free-ebooks">Free eBook Available</option>
-          <option value="partial">Partial eBook Available</option>
           <option value="paid-ebooks">eBook For Sale Available</option>
         </select>
       </form>

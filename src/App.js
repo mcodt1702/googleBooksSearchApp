@@ -44,7 +44,7 @@ export default class App extends React.Component {
     const { printType, filter, query } = this.state;
 
     let baseURL = `https://www.googleapis.com/books/v1/volumes?q=${query}&key=${key}&printType=${printType}`;
-    if (filter != "") {
+    if (filter !== "") {
       baseURL += `&filter=${filter}`;
     }
 
